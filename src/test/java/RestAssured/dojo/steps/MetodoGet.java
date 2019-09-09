@@ -25,7 +25,7 @@ public class MetodoGet {
 
 	@Quando("^eu realizar uma consulta$")
 	public void eu_realizar_uma_consulta() throws Throwable {
-
+		
 		response = given().contentType("application/json")
 				.accept("application/vnd.tasksmanager.v2")
 				.when()
@@ -33,7 +33,7 @@ public class MetodoGet {
 	}
 
 	@Entao("^terei todos os dados dos meus contatos$")
-	public void terei_todos_os_dados_de_meus_contatos() throws Throwable {
+	public void terei_todos_os_dados_dos_meus_contatos() throws Throwable {
 
 		response.then()
 		.statusCode(200)
